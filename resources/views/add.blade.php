@@ -53,15 +53,14 @@
 </div>
 
 <div id="section">
-    <input type="text" value="This is some text" id="text" style="width: 500px; height: 200px;"/>
+    <textarea id="text" rows="10" cols="30"></textarea>
+    <br>
     <br>
     <input type="button" value="Dodaj" id="button" />​
     <p id="text1">Upisite tekst koji zelite dodati</p>
 </div>
 
 <script>
-    // var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
-
     document.getElementById("button").addEventListener('click', function () {
         $text = document.getElementById("text").value;
 
@@ -75,15 +74,6 @@
                 text.innerHTML = 'sads dadas'
             }
         },"json");
-
-      /*  var posting = $.post("http://localhost:8888/add", {"text": $text});
-
-        posting.done(function( data ) {
-            window.alert(data);
-            var text = document.getElementById("text1");
-            text.innerHTML = 'sads dadas'
-        });*/
-
     });
 </script>
 
