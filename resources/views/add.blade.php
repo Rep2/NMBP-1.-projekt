@@ -69,7 +69,7 @@
                 url : "http://46.101.238.99/add",
                 data : {"text": $text},
                 success : function(data){
-                    document.getElementById("text1").innerHTML = data;
+                    document.getElementById("text1").innerHTML = data["message"];
                 }
             },"json");
         }else{
