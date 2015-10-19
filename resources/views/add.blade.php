@@ -53,7 +53,7 @@
     <textarea id="text" rows="15" cols="80"></textarea>
     <br>
     <input type="button" value="Dodaj" id="button" />​
-    <p id="text1">Upisite tekst koji zelite dodati</p>
+    <p id="text1">Upišite tekst koji želite dodati</p>
 </div>
 
 <script>

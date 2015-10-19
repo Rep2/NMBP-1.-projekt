@@ -20,7 +20,7 @@
             padding:5px;
         }
         #section {
-            width:350px;
+            width:650px;
             float:left;
             padding:10px;
         }
@@ -50,31 +50,62 @@
 </div>
 
 <div id="section">
+
     <div>
-        <input type="text" value="" id="search" style="float:left;margin-right:10px; width:400px;"/>​
-        <input type="button" value="Pretraži" id="button" style="float:left;"/>​
+        <input type="text" value="" id="search" style="width:436px"/>​
+        <input type="button" value="Pretraži" id="button"/>​
     </div>
+
+    <br>
+
+    <form action="">
+        <input type="radio" id="and" name="andor" value="and" checked="checked"> AND
+        <input type="radio" id="or" name="andor" value="or"> OR
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="radio" id="exact" name="type" value="exact" checked="checked"> Exact string matching
+        <input type="radio" id="dict" name="type" value="dict"> Use dictionaries
+        <input type="radio" id="fuzzy" name="type" value="fuzzy"> Fuzzy string matching
+    </form>
+
     <br>
     <textarea id="text" rows="15" cols="80"></textarea>
     <br>
-    <p id="text1">Upisite tekst koji zelite dodati</p>
+
+    <p id="text1">Upišite željeni uzorak riječi, izaberite opcije i pritisnite "Pretraži"</p>
+
 </div>
 
 <script>
     document.getElementById("button").addEventListener('click', function () {
-        $text = document.getElementById("text").value;
+        $text = document.getElementById("search").value;
+
+        $andOr = 1;
+        if (document.getElementById("and").checked){
+            $andOr = 0;
+        }
+
+        $type = 0;
+        if (document.getElementById("dict").checked){
+            $type = 1;
+        }else if (document.getElementById("fuzzy").checked) {
+            $type = 2
+        }
 
         if ($text != null && $text != ""){
             $.ajax({
                 type: "POST",
-                url : "http://46.101.238.99/add",
+                url : "http://46.101.238.99/search",
                 data : {"text": $text},
                 success : function(data){
                     document.getElementById("text1").innerHTML = data["message"];
                 }
             },"json");
         }else{
-            document.getElementById("text1").innerHTML = "Prvo upišite tekst koji želite pohraniti";
+            document.getElementById("text1").innerHTML = "Prvo upišite željeni uzorak riječi";
         }
     });
 </script>

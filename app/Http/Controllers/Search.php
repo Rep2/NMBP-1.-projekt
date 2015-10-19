@@ -36,12 +36,16 @@ class Search extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'text' => 'required|max:255',
+            'text' => 'required|max:1000',
+            'andor' => 'required|int',
+            'type' => 'required|int'
         ]);
 
         if ($validator->fails()) {
             return response()->json(['error'=>$validator->errors()->all()],400);
         }
+
+
 
         $text = $request->input('text');
 
