@@ -57,13 +57,28 @@ class Search extends Controller
         for( $i = 0; $i <= $strlen; $i++ ) {
             $char = substr( $text, $i, 1 );
 
-            if ($char == ' '){
-                if ($i > $firstIndex){
-                    array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+            if ($char == '\"'){
+                if ($isIn){
+                    if ($i > $firstIndex) {
+                        array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+                    }
+
                     $firstIndex = $i + 1;
+                    $isIn = false;
                 }else{
-                    $firstIndex++;
+                    if ($i > $firstIndex) {
+                        array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+                    }
+
+                    $firstIndex = $i + 1;
+                    $isIn = true;
                 }
+            }else if ($char == ' ' && !$isIn){
+                if ($i > $firstIndex) {
+                    array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+                }
+
+                $firstIndex = $i + 1;
             }
         }
 
