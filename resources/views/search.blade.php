@@ -50,6 +50,8 @@
 </div>
 
 <div id="section">
+    <input type="text" value="" id="search"/>​
+    <br>
     <textarea id="text" rows="15" cols="80"></textarea>
     <br>
     <input type="button" value="Dodaj" id="button" />​
