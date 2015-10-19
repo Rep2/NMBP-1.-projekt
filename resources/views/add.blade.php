@@ -63,7 +63,7 @@
     document.getElementById("button").addEventListener('click', function () {
         $text = document.getElementById("text").value;
 
-        if ($text != null){
+        if ($text != null && $text != ""){
             window.alert("1");
         }else{
             window.alert("2");
