@@ -44,11 +44,8 @@
 
 <div id="nav">
     <ul>
-        <li>Menu</li>
-        <ul>
-            <li><a href="http://46.101.238.99/search">Pretraživanje</a></li>
-            <li><a href="http://46.101.238.99/add">Dodaj novi tekst</a></li>
-        </ul>
+        <li><a href="http://46.101.238.99/search">Pretraživanje</a></li>
+        <li><a href="http://46.101.238.99/add">Dodaj novi tekst</a></li>
     </ul>
 </div>
 
