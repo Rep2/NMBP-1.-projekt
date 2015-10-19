@@ -52,7 +52,7 @@ class Search extends Controller
         $isIn = false;
         $firstIndex = 0;
         $tokenArray = [];
-
+        return response()->json(['message' => ord(substr( $text, 0, 1 ))], 200);
         $strlen = strlen( $text );
         for( $i = 0; $i <= $strlen; $i++ ) {
             $char = substr( $text, $i, 1 );
