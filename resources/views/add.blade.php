@@ -53,7 +53,7 @@
 </div>
 
 <div id="section">
-    <textarea id="text" rows="20" cols="80"></textarea>
+    <textarea id="text" rows="15" cols="80"></textarea>
     <br>
     <input type="button" value="Dodaj" id="button" />​
     <p id="text1">Upisite tekst koji zelite dodati</p>
@@ -64,20 +64,17 @@
         $text = document.getElementById("text").value;
 
         if ($text != null && $text != ""){
-            window.alert("1");
+            $.ajax({
+                type: "POST",
+                url : "http://46.101.238.99/add",
+                data : {"text": $text},
+                success : function(data){
+                    document.getElementById("text1").innerHTML = data;
+                }
+            },"json");
         }else{
-            window.alert("2");
+            document.getElementById("text1").innerHTML = "Prvo upišite tekst koji želite pohraniti";
         }
-
-        $.ajax({
-            type: "POST",
-            url : "http://46.101.238.99/add",
-            data : {"text": $text},
-            success : function(data){
-                var text = document.getElementById("text1");
-                text.innerHTML = 'sads dadas'
-            }
-        },"json");
     });
 </script>
 
