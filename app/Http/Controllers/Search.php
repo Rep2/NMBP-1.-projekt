@@ -67,6 +67,10 @@ class Search extends Controller
             }
         }
 
+        if (($i - $firstIndex) - 1 > 0) {
+            array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex - 1));
+        }
+
         return response()->json(['message' => $tokenArray], 200);
     }
 
