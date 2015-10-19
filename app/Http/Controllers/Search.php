@@ -87,6 +87,8 @@ class Search extends Controller
             array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex - 1));
         }
 
+        return response()->json(['message' => $tokenArray], 200);
+
         $secondTokenArray = [[]];
         for( $i = 0; $i < count($tokenArray); $i++) {
 
