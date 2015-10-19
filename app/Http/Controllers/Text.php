@@ -49,7 +49,7 @@ class Text extends Controller
 
         DB::insert("INSERT INTO texts VALUES (nextval('textsSequence'), '" .$text. "')");
 
-        return response()->json(['message' => 'Text'], 200);
+        return response()->json(['message' => 'Redak dodan'], 200);
     }
 
     /**
