@@ -87,7 +87,7 @@ class Search extends Controller
             array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex - 1));
         }
 
-        $secondTokenArray = [[]];
+        $secondTokenArray = [];
         for( $i = 0; $i < count($tokenArray); $i++) {
 
             $firstIndex = 0;
