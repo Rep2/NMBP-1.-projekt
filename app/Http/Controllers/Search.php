@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Validator;
+use Illuminate\Support\Facades\DB;
 
 class Search extends Controller
 {
@@ -46,13 +47,27 @@ class Search extends Controller
             return response()->json(['error'=>$validator->errors()->all()],400);
         }
 
-
-
         $text = $request->input('text');
 
-        DB::insert("INSERT INTO texts VALUES (nextval('textsSequence'), '" .$text. "')");
+        $isIn = false;
+        $firstIndex = 0;
+        $tokenArray = [];
 
-        return response()->json(['message' => 'Redak dodan'], 200);
+        $strlen = strlen( $text );
+        for( $i = 0; $i <= $strlen; $i++ ) {
+            $char = substr( $text, $i, 1 );
+
+            if ($char == ' '){
+                if ($i > $firstIndex){
+                    array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+                    $firstIndex = $i + 1;
+                }else{
+                    $firstIndex++;
+                }
+            }
+        }
+
+        return response()->json(['message' => $tokenArray], 200);
     }
 
     /**
