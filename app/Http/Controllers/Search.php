@@ -96,7 +96,7 @@ class Search extends Controller
 
                 if ($char == ' '){
                     if ($j > $firstIndex) {
-                        array_push($newArray, substr($text, $firstIndex, $j - $firstIndex));
+                        array_push($newArray, substr($tokenArray[$i], $firstIndex, $j - $firstIndex));
                     }
 
                     $firstIndex = $i + 1;
@@ -104,7 +104,7 @@ class Search extends Controller
             }
 
             if (($j - $firstIndex) - 1 > 0) {
-                array_push($newArray, substr($text, $firstIndex, $j - $firstIndex - 1));
+                array_push($newArray, substr($tokenArray[$i], $firstIndex, $j - $firstIndex - 1));
             }
 
             array_push($secondTokenArray, $newArray);
