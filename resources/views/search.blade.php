@@ -51,8 +51,8 @@
 
 <div id="section">
     <div>
-        <input type="text" value="" id="search" style="display:inline-block; margin-right:10px; width:400px;"/>​
-        <input type="button" value="Pretraži" id="button" style="display:inline-block;"/>​
+        <input type="text" value="" id="search" style="float:left;margin-right:10px; width:400px;"/>​
+        <input type="button" value="Pretraži" id="button" style="float:left;"/>​
     </div>
     <br>
     <textarea id="text" rows="15" cols="80"></textarea>
