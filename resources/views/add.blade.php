@@ -53,8 +53,7 @@
 </div>
 
 <div id="section">
-    <textarea id="text" rows="10" cols="30"></textarea>
-    <br>
+    <textarea id="text" rows="30" cols="60"></textarea>
     <br>
     <input type="button" value="Dodaj" id="button" />​
     <p id="text1">Upisite tekst koji zelite dodati</p>
