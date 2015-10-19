@@ -50,11 +50,11 @@
 </div>
 
 <div id="section">
-    <input type="text" value="" id="search"/>​
+    <input type="text" value="" id="search" style="width:300px;"/>​
+    <input type="button" value="Pretraži" id="button" />​
     <br>
     <textarea id="text" rows="15" cols="80"></textarea>
     <br>
-    <input type="button" value="Dodaj" id="button" />​
     <p id="text1">Upisite tekst koji zelite dodati</p>
 </div>
 
