@@ -12,3 +12,5 @@
 */
 
 Route::resource('add','Text');
+
+Route::resource('search','Search');
