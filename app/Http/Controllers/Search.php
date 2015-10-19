@@ -91,7 +91,7 @@ class Search extends Controller
         for( $i = 0; $i < count($tokenArray); $i++) {
 
             $firstIndex = 0;
-            $newArray = []
+            $newArray = [];
             for( $j = 0; $j < strlen($tokenArray[$i]); $j++){
 
                 if ($char == ' '){
