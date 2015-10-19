@@ -67,7 +67,7 @@
 
         $.ajax({
             type: "POST",
-            url : "http://localhost:8888/add",
+            url : "http://46.101.238.99/add",
             data : {"text": $text},
             success : function(data){
                 window.alert(data);
