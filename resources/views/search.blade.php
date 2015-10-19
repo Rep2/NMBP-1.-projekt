@@ -50,8 +50,10 @@
 </div>
 
 <div id="section">
-    <input type="text" value="" id="search" style="width:300px;"/>​
-    <input type="button" value="Pretraži" id="button" />​
+    <div>
+        <input type="text" value="" id="search" style="width:400px;"/>​
+        <input type="button" value="Pretraži" id="button" />​
+    </div>
     <br>
     <textarea id="text" rows="15" cols="80"></textarea>
     <br>
