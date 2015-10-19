@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\AddTextController;
+namespace App\Http\Controllers;
 
 use App\User;
 use Validator;
