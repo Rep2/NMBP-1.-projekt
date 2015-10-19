@@ -93,6 +93,7 @@ class Search extends Controller
             $firstIndex = 0;
             $newArray = [];
             for( $j = 0; $j < strlen($tokenArray[$i]); $j++){
+                $char = substr( $tokenArray[$i], $j, 1 );
 
                 if ($char == ' '){
                     if ($j > $firstIndex) {
