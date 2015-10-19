@@ -99,7 +99,7 @@
             $.ajax({
                 type: "POST",
                 url : "http://46.101.238.99/search",
-                data : {"text": $text},
+                data : {"text": $text, "andor":$andOr, "type":$type},
                 success : function(data){
                     document.getElementById("text1").innerHTML = data["message"];
                 }
