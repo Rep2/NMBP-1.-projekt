@@ -15,7 +15,7 @@
             line-height:30px;
             background-color:#eeeeee;
             height:300px;
-            width:150px;
+            width:180px;
             float:left;
             padding:5px;
         }
