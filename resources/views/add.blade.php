@@ -32,11 +32,11 @@
             padding:5px;
         }
     </style>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-
-<script> var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024); </script>
 
 <div id="header">
     <h1>Full & fuzzy text search</h1>
@@ -53,11 +53,40 @@
 </div>
 
 <div id="section">
-    <textarea name="input" rows="10" cols="30"></textarea>
+    <input type="text" value="This is some text" id="text" style="width: 500px; height: 200px;"/>
     <br>
-    <button type="button" onclick="alert('Hello World!')">Dodaj</button>
+    <input type="button" value="Dodaj" id="button" />​
     <p id="text1">Upisite tekst koji zelite dodati</p>
 </div>
 
+<script>
+    // var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+
+    document.getElementById("button").addEventListener('click', function () {
+        $text = document.getElementById("text").value;
+
+        $.ajax({
+            type: "POST",
+            url : "http://localhost:8888/add",
+            data : {"text": $text},
+            success : function(data){
+                window.alert(data);
+                var text = document.getElementById("text1");
+                text.innerHTML = 'sads dadas'
+            }
+        },"json");
+
+      /*  var posting = $.post("http://localhost:8888/add", {"text": $text});
+
+        posting.done(function( data ) {
+            window.alert(data);
+            var text = document.getElementById("text1");
+            text.innerHTML = 'sads dadas'
+        });*/
+
+    });
+</script>
+
 </body>
 </html>
+

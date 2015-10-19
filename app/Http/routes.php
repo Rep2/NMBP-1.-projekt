@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('add','AddTextController@getAddText');
+Route::resource('add','Text');
