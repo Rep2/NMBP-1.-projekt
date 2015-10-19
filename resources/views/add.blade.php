@@ -63,12 +63,17 @@
     document.getElementById("button").addEventListener('click', function () {
         $text = document.getElementById("text").value;
 
+        if ($text != null){
+            window.alert("1");
+        }else{
+            window.alert("2");
+        }
+
         $.ajax({
             type: "POST",
             url : "http://46.101.238.99/add",
             data : {"text": $text},
             success : function(data){
-                window.alert(data);
                 var text = document.getElementById("text1");
                 text.innerHTML = 'sads dadas'
             }
