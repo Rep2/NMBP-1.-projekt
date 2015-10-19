@@ -52,9 +52,8 @@ class Search extends Controller
         $isIn = false;
         $firstIndex = 0;
         $tokenArray = [];
-      
-        $strlen = strlen( $text );
-        for( $i = 0; $i <= $strlen; $i++ ) {
+
+        for( $i = 0; $i <= strlen( $text ); $i++ ) {
             $char = substr( $text, $i, 1 );
 
             // Checks if char == "
@@ -74,6 +73,7 @@ class Search extends Controller
                     $firstIndex = $i + 1;
                     $isIn = true;
                 }
+
             }else if ($char == ' ' && !$isIn){
                 if ($i > $firstIndex) {
                     array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
@@ -87,7 +87,29 @@ class Search extends Controller
             array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex - 1));
         }
 
-        return response()->json(['message' => $tokenArray], 200);
+        $secondTokenArray = [[]];
+        for( $i = 0; $i < count($tokenArray); $i++) {
+
+            $firstIndex = 0;
+            for( $j = 0; $j < strlen($tokenArray[$i]); $j++){
+
+                if ($char == ' '){
+                    if ($j > $firstIndex) {
+                        array_push($secondTokenArray, substr($text, $firstIndex, $j - $firstIndex));
+                    }
+
+                    $firstIndex = $i + 1;
+                }
+            }
+
+            if (($j - $firstIndex) - 1 > 0) {
+                array_push($secondTokenArray, substr($text, $firstIndex, $j - $firstIndex - 1));
+            }
+        }
+
+
+
+        return response()->json(['message' => $secondTokenArray], 200);
     }
 
     /**
