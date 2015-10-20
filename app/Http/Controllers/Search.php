@@ -96,7 +96,7 @@ class Search extends Controller
 
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-        $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) title, ts_rank(text_tsvector, to_tsquery(" .$queryString. ")) rank, FROM texts";
+        $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) text_tsvector, ts_rank(text_tsvector, to_tsquery(" .$queryString. ")) rank, FROM texts";
 
         $result = DB::select($selectQuery);
 
