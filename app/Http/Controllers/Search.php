@@ -105,10 +105,10 @@ class Search extends Controller
 
         for( $i = 0; $i < count($tokenArray); $i++) {
             if ($tokenArray[$i][0] == '('){
-                $tokenArray[$i][0] = substr($tokenArray[$i], 1, strlen($tokenArray[$i]) -2);
+                $selectQuery .= " text LIKE '%" .substr($tokenArray[$i], 1, strlen($tokenArray[$i]) -2);. "%'";
+            }else {
+                $selectQuery .= " text LIKE '%" . $tokenArray[$i] . "%'";
             }
-
-            $selectQuery .= " text LIKE '%" .$tokenArray[$i]. "%'";
 
             if ($i < (count($tokenArray) - 1)){
                 $selectQuery .= chr(10);
