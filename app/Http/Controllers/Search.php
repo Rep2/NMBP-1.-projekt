@@ -94,12 +94,14 @@ class Search extends Controller
 
         $separator = $request->input('andor') == 0 ? " & " : " | ";
 
-        $queryString = implode($separator, $parsedTokenArray);
+        $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-    //    $selectQuery = "SELECT id,
-       //     ts_headline(text, to_tsquery"*/
+        $selectQuery = "SELECT id,
+            ts_headline(text, to_tsquery(" .$separator. ")) title,
+            ts_rank(text_tsvector, to_tsquery(" .$separator. ")) rank
+            FROM texts"
 
-        return response()->json(['message' => $queryString], 200);
+        return response()->json(['message' => $selectQuery], 200);
     }
 
     /**
