@@ -99,7 +99,7 @@ class Search extends Controller
         $selectQuery = "SELECT id,
             ts_headline(text, to_tsquery(" .$separator. ")) title,
             ts_rank(text_tsvector, to_tsquery(" .$separator. ")) rank
-            FROM texts"
+            FROM texts";
 
         return response()->json(['message' => $selectQuery], 200);
     }
