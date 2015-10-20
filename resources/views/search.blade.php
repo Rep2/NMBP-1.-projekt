@@ -101,7 +101,11 @@
                 url : "http://46.101.238.99/search",
                 data : {"text": $text, "andor":$andOr, "type":$type},
                 success : function(data){
-                    document.getElementById("text1").innerHTML = data["message"];
+                    $newText = "";
+
+                    $.each(data["message"], function(index, val) {
+                        $newText += val;
+                    });
                 }
             },"json");
         }else{
