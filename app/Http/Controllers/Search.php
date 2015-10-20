@@ -100,7 +100,7 @@ class Search extends Controller
 
         $result = DB::select($selectQuery);
 
-        return response()->json(['message' => $result], 200);
+        return response()->json(['message' => print_r($result)], 200);
     }
 
     /**
