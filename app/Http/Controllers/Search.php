@@ -89,8 +89,13 @@ class Search extends Controller
 
         $parsedTokenArray = [];
         for( $i = 0; $i < count($tokenArray); $i++) {
-            array_push($parsedTokenArray, preg_replace('!\s+!', ' & ', $tokenArray[$i]));
+            array_push($parsedTokenArray, "(" .preg_replace('!\s+!', ' & ', $tokenArray[$i]). ")");
         }
+
+      /*  $separator = $request->input('andor') == 0 ? " & " : " | ";
+
+        $selectQuery = "SELECT id,
+            ts_headline(text, to_tsquery"*/
 
         return response()->json(['message' => $parsedTokenArray], 200);
     }
