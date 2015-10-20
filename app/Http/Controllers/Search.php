@@ -89,7 +89,7 @@ class Search extends Controller
 
         $parsedTokenArray = [];
         for( $i = 0; $i < count($tokenArray); $i++) {
-            push($parsedTokenArray, preg_replace('!\s+!', ' & ',trim($tokenArray[$i])));
+            array_push($parsedTokenArray, preg_replace('!\s+!', ' & ',trim($tokenArray[$i])));
         }
 
         return response()->json(['message' => $parsedTokenArray], 200);
