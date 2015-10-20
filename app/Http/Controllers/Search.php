@@ -92,12 +92,14 @@ class Search extends Controller
             array_push($parsedTokenArray, preg_replace('!\s+!', ' & ', $tokenArray[$i]));
         }
 
-      /*  $separator = $request->input('andor') == 0 ? " & " : " | ";
+        $separator = $request->input('andor') == 0 ? " & " : " | ";
 
-        $selectQuery = "SELECT id,
-            ts_headline(text, to_tsquery"*/
+        $queryString = implode($separator, $parsedTokenArray);
 
-        return response()->json(['message' => $parsedTokenArray], 200);
+    //    $selectQuery = "SELECT id,
+       //     ts_headline(text, to_tsquery"*/
+
+        return response()->json(['message' => $queryString], 200);
     }
 
     /**
