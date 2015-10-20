@@ -104,7 +104,7 @@
                     $newText = "";
 
                     $.each(data["message"], function(index, val) {
-                        $newText += JSON.parse(val);
+                        $newText += eval(val);
                     });
 
                     document.getElementById("text1").innerHTML = $newText;
