@@ -103,11 +103,19 @@ class Search extends Controller
 
         $selectQuery .= "" .chr(10). "WHERE";
 
+
+
         for( $i = 0; $i < count($tokenArray); $i++) {
-            if ($tokenArray[$i][0] == '('){
-                $selectQuery .= " text LIKE '%" .substr($tokenArray[$i], 1, strlen($tokenArray[$i]) -2). "%'";
-            }else {
-                $selectQuery .= " text LIKE '%" . $tokenArray[$i] . "%'";
+
+            if ($request->input('type') == 0) {
+                if ($tokenArray[$i][0] == '(') {
+                    $selectQuery .= " text LIKE '%" . substr($tokenArray[$i], 1, strlen($tokenArray[$i]) - 2) . "%'";
+                } else {
+                    $selectQuery .= " text LIKE '%" . $tokenArray[$i] . "%'";
+                }
+            }else if ($request->input('type') == 1) {
+
+                $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .$parsedTokenArray. "'";
             }
 
             if ($i < (count($tokenArray) - 1)){
