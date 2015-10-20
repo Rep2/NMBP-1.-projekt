@@ -87,33 +87,12 @@ class Search extends Controller
             array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex - 1));
         }
 
-        $secondTokenArray = [];
+        $parsedTokenArray = [];
         for( $i = 0; $i < count($tokenArray); $i++) {
-
-            $firstIndex = 0;
-            $newArray = [];
-            for( $j = 0; $j < strlen($tokenArray[$i]); $j++){
-                $char = substr( $tokenArray[$i], $j, 1 );
-
-                if ($char == ' '){
-                    if ($j > $firstIndex) {
-                        array_push($newArray, substr($tokenArray[$i], $firstIndex, $j - $firstIndex));
-                    }
-
-                    $firstIndex = $i + 1;
-                }
-            }
-
-            if (($j - $firstIndex) > 0) {
-                array_push($newArray, substr($tokenArray[$i], $firstIndex, $j - $firstIndex));
-            }
-
-            array_push($secondTokenArray, $newArray);
+            push($parsedTokenArray, preg_replace('!\s+!', ' & ',trim($tokenArray[$i])));
         }
 
-
-
-        return response()->json(['message' => $secondTokenArray], 200);
+        return response()->json(['message' => $parsedTokenArray], 200);
     }
 
     /**
