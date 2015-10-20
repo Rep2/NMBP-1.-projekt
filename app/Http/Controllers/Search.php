@@ -112,9 +112,9 @@ class Search extends Controller
 
         $selectQuery .= " ORDER BY rank DESC";
 
-      //  $result = DB::select($selectQuery);
+        $result = DB::select($selectQuery);
 
-        return response()->json(['message' => $selectQuery], 200);
+        return response()->json(['select' => $selectQuery, 'result' => $result], 200);
     }
 
     /**
