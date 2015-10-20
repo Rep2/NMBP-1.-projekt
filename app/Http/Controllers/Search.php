@@ -96,14 +96,18 @@ class Search extends Controller
 
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-        $selectQuery = "SELECT   ts_headline(text, to_tsquery(" .$queryString. ")) title,
-                 ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank" .chr(10). "FROM texts ";
+        $selectQuery = "SELECT ts_headline(text, to_tsquery(" .$queryString. ")) title,
+               ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank" .chr(10). "FROM texts ";
 
-        $separator = $request->input('andor') == 0 ? " AND " : " OR ";
+        $separator = $request->input('andor') == 0 ? "AND " : "OR ";
 
         $selectQuery .= "" .chr(10). "WHERE";
 
         for( $i = 0; $i < count($tokenArray); $i++) {
+            if ($tokenArray[$i][0] == '('){
+                $tokenArray[$i][0] = substr($tokenArray[$i], 1, strlen($tokenArray[$i]) -2);
+            }
+
             $selectQuery .= " text LIKE '%" .$tokenArray[$i]. "%'";
 
             if ($i < (count($tokenArray) - 1)){
