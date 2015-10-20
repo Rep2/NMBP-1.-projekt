@@ -114,8 +114,12 @@ class Search extends Controller
                     $selectQuery .= " text LIKE '%" . $tokenArray[$i] . "%'";
                 }
             }else if ($request->input('type') == 1) {
+                if ($tokenArray[$i][0] == '(') {
+                    $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .substr($parsedTokenArray[$i], 1, strlen($parsedTokenArray[$i]) - 2). "')";
+                } else {
+                    $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .$parsedTokenArray[$i]. "')";
+                }
 
-                $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .$parsedTokenArray[$i]. "')";
             }
 
             if ($i < (count($tokenArray) - 1)){
