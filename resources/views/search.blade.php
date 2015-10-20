@@ -104,7 +104,7 @@
                     $newText = "";
 
                     $.each(data["message"], function(index, val) {
-                        $newText += eval(val);
+                        $newText += val["title"] + "[" + val["rank"] + "]";
                     });
 
                     document.getElementById("text1").innerHTML = $newText;
