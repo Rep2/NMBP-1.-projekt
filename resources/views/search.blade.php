@@ -106,6 +106,8 @@
                     $.each(data["message"], function(index, val) {
                         $newText += val;
                     });
+
+                    document.getElementById("text1").innerHTML = $newText;
                 }
             },"json");
         }else{
