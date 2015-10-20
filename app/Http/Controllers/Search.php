@@ -101,17 +101,18 @@ class Search extends Controller
 
         $separator = $request->input('andor') == 0 ? " AND " : " OR ";
 
-        $selectQuery .= "WHERE";
+        $selectQuery .= "" .chr(10). "WHERE";
 
         for( $i = 0; $i < count($tokenArray); $i++) {
             $selectQuery .= " text LIKE '%" .$tokenArray[$i]. "%'";
 
             if ($i < (count($tokenArray) - 1)){
+                $selectQuery .= chr(10);
                 $selectQuery .= $separator;
             }
         }
 
-        $selectQuery .= " ORDER BY rank DESC";
+        $selectQuery .= "" .chr(10). "ORDER BY rank DESC";
 
         $result = DB::select($selectQuery);
 
