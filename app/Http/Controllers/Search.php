@@ -115,7 +115,7 @@ class Search extends Controller
                 }
             }else if ($request->input('type') == 1) {
 
-                $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .$parsedTokenArray[$i]. "'";
+                $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .$parsedTokenArray[$i]. "')";
             }
 
             if ($i < (count($tokenArray) - 1)){
