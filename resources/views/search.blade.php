@@ -101,13 +101,13 @@
                 url : "http://46.101.238.99/search",
                 data : {"text": $text, "andor":$andOr, "type":$type},
                 success : function(data){
-                    $newText = "";
+                  /*  $newText = "";
 
                     $.each(data["message"], function(index, val) {
-                        $newText += val;
-                    });
+                        $newText += JSON.parse(val);
+                    });*/
 
-                    document.getElementById("text1").innerHTML = $newText;
+                    document.getElementById("text1").innerHTML = JSON.parse(data);
                 }
             },"json");
         }else{
