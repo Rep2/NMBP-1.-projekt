@@ -98,7 +98,9 @@ class Search extends Controller
 
         $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) title, ts_rank(text_tsvector, to_tsquery(" .$queryString. ")) rank, FROM texts";
 
-        return response()->json(['message' => $selectQuery], 200);
+        $result = DB::select($selectQuery);
+
+        return response()->json(['message' => $result], 200);
     }
 
     /**
