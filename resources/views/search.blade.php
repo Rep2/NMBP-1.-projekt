@@ -101,9 +101,11 @@
                 url : "http://46.101.238.99/search",
                 data : {"text": $text, "andor":$andOr, "type":$type},
                 success : function(data){
+                    document.getElementById("text").innerHTML = data["select"];
+
                     $newText = "";
 
-                    $.each(data["message"], function(index, val) {
+                    $.each(data["result"], function(index, val) {
                         $newText += val["title"] + "[" + val["rank"] + "] <br>";
                     });
 
