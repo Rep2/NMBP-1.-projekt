@@ -60,14 +60,14 @@ class Search extends Controller
             if (ord($char) == 34){
                 if ($isIn){
                     if ($i > $firstIndex) {
-                        array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+                        array_push($tokenArray, trim(substr($text, $firstIndex, $i - $firstIndex)));
                     }
 
                     $firstIndex = $i + 1;
                     $isIn = false;
                 }else{
                     if ($i > $firstIndex) {
-                        array_push($tokenArray, substr($text, $firstIndex, $i - $firstIndex));
+                        array_push($tokenArray, trim(substr($text, $firstIndex, $i - $firstIndex)));
                     }
 
                     $firstIndex = $i + 1;
@@ -89,7 +89,7 @@ class Search extends Controller
 
         $parsedTokenArray = [];
         for( $i = 0; $i < count($tokenArray); $i++) {
-            array_push($parsedTokenArray, preg_replace('!\s+!', ' & ',trim($tokenArray[$i])));
+            array_push($parsedTokenArray, preg_replace('!\s+!', ' & ', $tokenArray[$i]));
         }
 
         return response()->json(['message' => $parsedTokenArray], 200);
