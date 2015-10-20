@@ -96,7 +96,8 @@ class Search extends Controller
 
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-        $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) title, ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank FROM texts ";
+        $selectQuery = "SELECT id,
+         ts_headline(text, to_tsquery(" .$queryString. ")) title, ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank FROM texts ";
 
         $separator = $request->input('andor') == 0 ? " AND " : " OR ";
 
