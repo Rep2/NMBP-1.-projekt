@@ -96,11 +96,25 @@ class Search extends Controller
 
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-        $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) title, ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank FROM texts";
+        $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) title, ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank FROM texts ";
 
-        $result = DB::select($selectQuery);
+        $separator = $request->input('andor') == 0 ? " AND " : " OR ";
 
-        return response()->json(['message' => $result], 200);
+        $selectQuery .= "WHERE";
+
+        for( $i = 0; $i < count($tokenArray); $i++) {
+            $selectQuery .= " text LIKE '%" .$tokenArray[$i]. "%'";
+
+            if (i < (count($tokenArray) - 1)){
+                $selectQuery .= $separator;
+            }
+        }
+
+        $selectQuery .= " ORDER BY rank DESC";
+
+      //  $result = DB::select($selectQuery);
+
+        return response()->json(['message' => $selectQuery], 200);
     }
 
     /**
