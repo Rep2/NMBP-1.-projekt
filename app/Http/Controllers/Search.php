@@ -105,7 +105,7 @@ class Search extends Controller
         for( $i = 0; $i < count($tokenArray); $i++) {
             $selectQuery .= " text LIKE '%" .$tokenArray[$i]. "%'";
 
-            if (i < (count($tokenArray) - 1)){
+            if ($i < (count($tokenArray) - 1)){
                 $selectQuery .= $separator;
             }
         }
