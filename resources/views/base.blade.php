@@ -51,6 +51,10 @@
 
     @yield('content')
 
+<footer class="row">
+    <div id="copyright text-right">Ivan Rep, 0036475497 </div>
+</footer>
+
 </body>
 </html>
 
