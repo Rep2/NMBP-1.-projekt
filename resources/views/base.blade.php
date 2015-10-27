@@ -38,18 +38,22 @@
 
 <body>
 
-<div id="header">
-    <h1>Full & fuzzy text search</h1>
-</div>
+<div id="main" class="row">
 
-<div id="nav">
-    <ul>
-        <li><a href="http://46.101.238.99/search">Pretraživanje</a></li>
-        <li><a href="http://46.101.238.99/add">Dodaj novi tekst</a></li>
-    </ul>
-</div>
+    <div id="header">
+        <h1>Full & fuzzy text search</h1>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="http://46.101.238.99/search">Pretraživanje</a></li>
+            <li><a href="http://46.101.238.99/add">Dodaj novi tekst</a></li>
+        </ul>
+    </div>
 
     @yield('content')
+
+</div>
 
 <footer class="row">
     <div id="copyright text-right">Ivan Rep, 0036475497 </div>
