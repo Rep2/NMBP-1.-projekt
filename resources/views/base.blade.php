@@ -55,7 +55,7 @@
 
 </div>
 
-<footer class="row">
+<footer class="row" id="footer">
     <div id="copyright text-right">Ivan Rep, 0036475497 </div>
 </footer>
 
