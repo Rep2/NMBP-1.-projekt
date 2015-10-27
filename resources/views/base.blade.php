@@ -14,13 +14,13 @@
         #nav {
             line-height:30px;
             background-color:#eeeeee;
-            height:300px;
+            height:500px;
             width:180px;
             float:left;
             padding:5px;
         }
         #section {
-            width:350px;
+            width:800px;
             float:left;
             padding:10px;
         }
