@@ -46,7 +46,7 @@ class Pivoting extends Controller
           FROM log
           GROUP BY query, newDate
           ORDER BY query, newDate')
-          AS pivotTable (query varchar";
+          AS pivotTable (query  varchar(1000)";
 // WHERE date::DATE >= to_date('" .$datOd->format('d-m-Y'). "', 'd-m-Y') AND date::Date <= to_date('" .$datDo->format('d-m-Y'). "', 'd-m-Y')
 
         $interval = \DateInterval::createFromDateString('1 day');
