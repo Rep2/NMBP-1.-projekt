@@ -56,7 +56,7 @@ class Pivoting extends Controller
           ORDER BY query, newDate')
           AS pivotTable (query varchar(1000)";
 
-        $interval = \DateInterval::createFromDateString('1 hour');
+        $interval = $type == 0 ?  \DateInterval::createFromDateString('1 day') : \DateInterval::createFromDateString('1 hour');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
         $dateQuery = "d.m.Y";
