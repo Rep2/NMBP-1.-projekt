@@ -121,9 +121,9 @@ class Search extends Controller
                 }
             }else{
                 if ($tokenArray[$i][0] == '(') {
-                    $selectQuery .= " text % '%" . substr($tokenArray[$i], 1, strlen($tokenArray[$i]) - 2) . "%'";
+                    $selectQuery .= " text % '" . substr($tokenArray[$i], 1, strlen($tokenArray[$i]) - 2) . "'";
                 } else {
-                    $selectQuery .= " levenshtein(text, '" .$tokenArray[$i]. "') <= 3";
+                    $selectQuery .= " text % '" . $tokenArray[$i] . "'";
                 }
             }
 
