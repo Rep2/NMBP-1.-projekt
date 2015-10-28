@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a197283-b0c0-4709-8c96-d854e75940be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/search.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Text.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="NMBP-1.-projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +31,14 @@
       <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="1575">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="915">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
-                <marker date="1446043379000" expanded="true" signature="1065:1131" placeholder="INSERT INTO ..." />
+                <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+                <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+                <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+                <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
               </folding>
             </state>
           </provider>
@@ -73,8 +77,8 @@
       <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.583333" vertical-offset="1264" max-vertical-offset="2235">
-              <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+            <state vertical-scroll-proportion="-32.958332" vertical-offset="1294" max-vertical-offset="2235">
+              <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="86" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
                 <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
@@ -105,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.25597268" vertical-offset="0" max-vertical-offset="879">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
               </folding>
@@ -117,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.426097" vertical-offset="336" max-vertical-offset="1215">
+            <state vertical-scroll-proportion="-15.375" vertical-offset="336" max-vertical-offset="1215">
               <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding />
             </state>
@@ -153,15 +157,15 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SearchNew.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SearchMidified.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SearchModified.php" />
         <option value="$PROJECT_DIR$/resources/views/newSearch.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NewSearch.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
         <option value="$PROJECT_DIR$/resources/views/search.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -460,7 +464,10 @@
           <caret line="51" column="54" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="54" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446043379000" expanded="true" signature="1065:1131" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
@@ -540,7 +547,10 @@
           <caret line="51" column="54" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="54" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446043379000" expanded="true" signature="1065:1131" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
@@ -620,7 +630,10 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446043379000" expanded="true" signature="1065:1131" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
@@ -786,32 +799,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="1575">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446043379000" expanded="true" signature="1065:1131" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/newSearch.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.25" vertical-offset="225" max-vertical-offset="1215">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,10 +817,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.375" vertical-offset="336" max-vertical-offset="1215">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.583333" vertical-offset="1264" max-vertical-offset="2235">
-          <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
+        <state vertical-scroll-proportion="-32.958332" vertical-offset="1294" max-vertical-offset="2235">
+          <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="86" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
             <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
@@ -836,11 +836,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/search.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.426097" vertical-offset="336" max-vertical-offset="1215">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding />
+        <state vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="915">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
+            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25597268" vertical-offset="0" max-vertical-offset="879">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

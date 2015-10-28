@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('text/{id}', 'Text@get');
 Route::resource('add','Text');
 
 Route::resource('search','Search');
