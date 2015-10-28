@@ -14,4 +14,4 @@
 Route::resource('add','Text');
 
 Route::resource('search','Search');
-Route::resource('newSearch','newSearch');
+Route::resource('newSearch','NewSearch');
