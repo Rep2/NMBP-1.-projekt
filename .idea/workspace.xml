@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a197283-b0c0-4709-8c96-d854e75940be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NewSearch.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewSearch.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Search.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NMBP-1.-projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,10 +75,10 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.58429563" vertical-offset="1369" max-vertical-offset="2235">
-              <caret line="125" column="55" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
+              <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1446048886000" expanded="true" signature="2711:4504" placeholder="SELECT id, r..." />
+                <marker date="1446049420000" expanded="true" signature="2711:4491" placeholder="SELECT id, r..." />
               </folding>
             </state>
           </provider>
@@ -419,7 +419,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2113752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2113752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -488,7 +488,7 @@
           <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446048886000" expanded="true" signature="2711:4504" placeholder="SELECT id, r..." />
+            <marker date="1446049420000" expanded="true" signature="2711:4491" placeholder="SELECT id, r..." />
           </folding>
         </state>
       </provider>
@@ -560,7 +560,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446048886000" expanded="true" signature="2711:4504" placeholder="SELECT id, r..." />
+            <marker date="1446049420000" expanded="true" signature="2711:4491" placeholder="SELECT id, r..." />
           </folding>
         </state>
       </provider>
@@ -640,7 +640,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446048886000" expanded="true" signature="2711:4504" placeholder="SELECT id, r..." />
+            <marker date="1446049420000" expanded="true" signature="2711:4491" placeholder="SELECT id, r..." />
           </folding>
         </state>
       </provider>
@@ -837,10 +837,10 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58429563" vertical-offset="1369" max-vertical-offset="2235">
-          <caret line="125" column="55" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
+          <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446048886000" expanded="true" signature="2711:4504" placeholder="SELECT id, r..." />
+            <marker date="1446049420000" expanded="true" signature="2711:4491" placeholder="SELECT id, r..." />
           </folding>
         </state>
       </provider>

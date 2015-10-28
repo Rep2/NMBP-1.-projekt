@@ -123,7 +123,7 @@ class Search extends Controller
                 if ($tokenArray[$i][0] == '(') {
                     $selectQuery .= " to_tsvector(text) % '" . substr($tokenArray[$i], 1, strlen($tokenArray[$i]) - 2) . "'";
                 } else {
-                    $selectQuery .= " to_tsvector(text) % '" . $tokenArray[$i] . "'";
+                    $selectQuery .= " text % '" . $tokenArray[$i] . "'";
                 }
             }
 
