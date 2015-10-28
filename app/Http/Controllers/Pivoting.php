@@ -42,12 +42,11 @@ class Pivoting extends Controller
         $datDo = \DateTime::createFromFormat('Y-m-d',$request->input("datum_do"));
         $type = $request->input("type");
 
-        $queryString = "sada";
-       /*"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
+        $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
           FROM log
           GROUP BY query, newDate
           ORDER BY query, newDate)
-          AS pivotTable (query varchar";*/
+          AS pivotTable (query varchar";
 
         $interval = \DateInterval::createFromDateString('1 day');
         $period = new \DatePeriod($datOd, $interval, $datDo);
