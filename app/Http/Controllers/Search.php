@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -136,6 +137,8 @@ class Search extends Controller
         $selectQuery .= "" .chr(10). "ORDER BY rank DESC LIMIT 10";
 
         $result = DB::select($selectQuery);
+
+        DB::insert("INSERT INTO log (query, date) VALUES (?, ?)", [$queryString, Carbon::now()]);
 
         return response()->json(['select' => $selectQuery, 'result' => $result], 200);
     }

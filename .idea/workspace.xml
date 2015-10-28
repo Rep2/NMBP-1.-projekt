@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a197283-b0c0-4709-8c96-d854e75940be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Text.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Search.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
     </list>
     <ignored path="NMBP-1.-projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52901024" vertical-offset="0" max-vertical-offset="915">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state vertical-scroll-proportion="-11.0" vertical-offset="36" max-vertical-offset="915">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
                 <marker date="1446051747000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
@@ -73,14 +73,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Search.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.958332" vertical-offset="1294" max-vertical-offset="2235">
-              <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.84411085" vertical-offset="1369" max-vertical-offset="2280">
+              <caret line="140" column="97" selection-start-line="140" selection-start-column="97" selection-end-line="140" selection-end-column="97" />
               <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
+                <element signature="e#40#58#0#PHP" expanded="true" />
+                <marker date="1446052451000" expanded="true" signature="2730:4600" placeholder="SELECT id, r..." />
+                <marker date="1446052451000" expanded="true" signature="4436:4479" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -161,10 +162,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/SearchModified.php" />
         <option value="$PROJECT_DIR$/resources/views/newSearch.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NewSearch.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
         <option value="$PROJECT_DIR$/resources/views/search.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
       </list>
     </option>
   </component>
@@ -492,8 +493,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="2895">
           <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
+            <element signature="e#40#58#0#PHP" expanded="true" />
+            <marker date="1446052451000" expanded="true" signature="2730:4600" placeholder="SELECT id, r..." />
+            <marker date="1446052451000" expanded="true" signature="4436:4479" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -567,8 +569,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
+            <element signature="e#40#58#0#PHP" expanded="true" />
+            <marker date="1446052451000" expanded="true" signature="2730:4600" placeholder="SELECT id, r..." />
+            <marker date="1446052451000" expanded="true" signature="4436:4479" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -650,8 +653,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
+            <element signature="e#40#58#0#PHP" expanded="true" />
+            <marker date="1446052451000" expanded="true" signature="2730:4600" placeholder="SELECT id, r..." />
+            <marker date="1446052451000" expanded="true" signature="4436:4479" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -824,17 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.958332" vertical-offset="1294" max-vertical-offset="2235">
-          <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="86" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446050460000" expanded="true" signature="2711:4482" placeholder="SELECT id, r..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="345">
@@ -847,14 +840,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52901024" vertical-offset="0" max-vertical-offset="915">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state vertical-scroll-proportion="-11.0" vertical-offset="36" max-vertical-offset="915">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
             <marker date="1446051747000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
             <marker date="1446051747000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
             <marker date="1446051747000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
             <marker date="1446051747000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84411085" vertical-offset="1369" max-vertical-offset="2280">
+          <caret line="140" column="97" selection-start-line="140" selection-start-column="97" selection-end-line="140" selection-end-column="97" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
+            <marker date="1446052451000" expanded="true" signature="2730:4600" placeholder="SELECT id, r..." />
+            <marker date="1446052451000" expanded="true" signature="4436:4479" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
