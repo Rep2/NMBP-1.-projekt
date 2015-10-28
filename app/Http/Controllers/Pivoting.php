@@ -59,7 +59,7 @@ class Pivoting extends Controller
         //    $queryString += ", " + $datOd + " int";
         //  }
 
-        $queryString .= ", prvi date) ORDER BY query";
+        $queryString .= ", prvi int) ORDER BY query";
 
         $result = DB::select($queryString);
 
