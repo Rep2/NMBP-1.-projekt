@@ -61,6 +61,5 @@ class Pivoting extends Controller
         $queryString .= ") ORDER BY query";
 
         return response()->json(["str" => $queryString], 200);
-
-    }"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*) FROM log GROUP BY query, newDate ORDER BY query, newDate') AS pivotTable (query varchar1234567) ORDER BY query"
+    }
 }
