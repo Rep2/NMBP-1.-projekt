@@ -38,8 +38,8 @@ class Pivoting extends Controller
             return response()->json(['error'=>$validator->errors()->all()],400);
         }
 
-        $datOd = $request->input("datum_od");
-        $datDo = $request->input("datum_do");
+        $datOd = strtotime($request->input("datum_od"));
+        $datDo = strtotime($request->input("datum_do"));
         $type = $request->input("type");
 
         $queryString = "sada";/*"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
