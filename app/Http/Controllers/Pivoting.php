@@ -39,7 +39,9 @@ class Pivoting extends Controller
         }
 
         $datOd = \DateTime::createFromFormat('Y-m-d', $request->input("datum_od"));
+        $datOd->setTime(0,0);
         $datDo = \DateTime::createFromFormat('Y-m-d', $request->input("datum_do"));
+        $datDo->setTime(0,0);
         $type = $request->input("type");
 
         $queryString = "SELECT * FROM crosstab ('SELECT query, to_char(date, ''DD.MM.YYYY HH'') newDate, count(*)
