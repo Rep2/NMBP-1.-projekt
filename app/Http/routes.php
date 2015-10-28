@@ -15,4 +15,5 @@ Route::get('text/{id}', 'Text@get');
 Route::resource('add','Text');
 
 Route::resource('search','Search');
+Route::resource('pivoting','Pivoting');
 Route::resource('newSearch','NewSearch');

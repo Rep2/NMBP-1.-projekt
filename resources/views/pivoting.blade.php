@@ -5,23 +5,13 @@
 <div id="section">
 
     <div>
-        <input type="text" value="" id="search" style="width:436px"/>​
-        <input type="button" value="Pretraži" id="button"/>​
+        <input type="datetime" id="datumOd"/>​
+        <input type="datetime" id="datumDo"/>​
     </div>
 
-    <br>
-
     <form action="">
-        <input type="radio" id="and" name="andor" value="and" checked="checked"> AND
-        <input type="radio" id="or" name="andor" value="or"> OR
-    </form>
-
-    <br>
-
-    <form action="">
-        <input type="radio" id="exact" name="type" value="exact" checked="checked"> Exact string matching
-        <input type="radio" id="dict" name="type" value="dict"> Use dictionaries
-        <input type="radio" id="fuzzy" name="type" value="fuzzy"> Fuzzy string matching
+        <input type="radio" id="date" name="type" value="exact" checked="checked"> Dan
+        <input type="radio" id="time" name="type" value="dict"> Sat
     </form>
 
     <br>
