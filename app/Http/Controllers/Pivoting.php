@@ -44,11 +44,11 @@ class Pivoting extends Controller
 
         $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
           FROM log
-          WHERE date::DATE >= '" .$datOd->format('d/m/Y'). "' && date::Date <= '" .$datDo->format('d/m/Y'). "'
+          WHERE date::DATE >= '01.02.2013' && date::Date <= '02.02.2013'
           GROUP BY query, newDate
           ORDER BY query, newDate')
           AS pivotTable (query varchar";
-
+// WHERE date::DATE >= '" .$datOd->format('d/m/Y'). "' && date::Date <= '" .$datDo->format('d/m/Y'). "'
         $interval = \DateInterval::createFromDateString('1 day');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
