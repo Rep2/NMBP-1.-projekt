@@ -5,7 +5,11 @@
 <div id="section">
 
     <div>
-        <input type="datetime" id="datumOd"/>​
+        <form>
+            Datum od
+            <input type="datetime" id="datumOd"/>​
+        </form>
+        Datum do
         <input type="datetime" id="datumDo"/>​
     </div>
 
