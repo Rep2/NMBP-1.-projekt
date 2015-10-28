@@ -7,12 +7,11 @@
     <div>
         <form>
             Datum od
-            <input type="date" name="bday" max="1979-12-31"><br>
-            <input type="datetime" id="datumOd"/>​
+            <input type="date" id="datumOd"/><br>
         </form>
         <form>
             Datum do
-            <input type="datetime" id="datumDo"/>​
+            <input type="date" id="datumDo"/>​<br>
         </form>
     </div>
 
