@@ -26,7 +26,7 @@
     </form>
 
     <br>
-    <input type="button" id="nutton" value="Dohvati podatke"><br>
+    <input type="button" id="button" value="Dohvati podatke"><br>
 
     <p id="text1">Unesite datum od i datum do, odaberite granulaciju i pokrenite analizu</p>
 
