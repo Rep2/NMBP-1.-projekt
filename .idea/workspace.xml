@@ -115,12 +115,14 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5496536" vertical-offset="214" max-vertical-offset="1110">
-              <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+              <caret line="46" column="142" selection-start-line="46" selection-start-column="142" selection-end-line="46" selection-end-column="142" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1446066078000" expanded="true" signature="1155:1312" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446066078000" expanded="true" signature="1155:1312" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446066078000" expanded="true" signature="1155:1478" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446067143000" expanded="true" signature="1155:1320" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446067143000" expanded="true" signature="1155:1320" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446067143000" expanded="true" signature="1155:1321" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446067143000" expanded="true" signature="1155:1388" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446067143000" expanded="true" signature="1155:1504" placeholder="SELECT * FRO..crosstab..." />
               </folding>
             </state>
           </provider>
@@ -874,12 +876,14 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5496536" vertical-offset="214" max-vertical-offset="1110">
-          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+          <caret line="46" column="142" selection-start-line="46" selection-start-column="142" selection-end-line="46" selection-end-column="142" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446066078000" expanded="true" signature="1155:1312" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446066078000" expanded="true" signature="1155:1312" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446066078000" expanded="true" signature="1155:1478" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446067143000" expanded="true" signature="1155:1320" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446067143000" expanded="true" signature="1155:1320" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446067143000" expanded="true" signature="1155:1321" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446067143000" expanded="true" signature="1155:1388" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446067143000" expanded="true" signature="1155:1504" placeholder="SELECT * FRO..crosstab..." />
           </folding>
         </state>
       </provider>
