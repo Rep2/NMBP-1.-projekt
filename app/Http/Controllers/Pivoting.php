@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Faker\Provider\cs_CZ\DateTime;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -39,8 +38,8 @@ class Pivoting extends Controller
             return response()->json(['error'=>$validator->errors()->all()],400);
         }
 
-        $datOd = DateTime::createFromFormat('Y-m-d',$request->input("datum_od"));
-        $datDo = DateTime::createFromFormat('Y-m-d',$request->input("datum_do"));
+        $datOd = \DateTime::createFromFormat('Y-m-d',$request->input("datum_od"));
+        $datDo = \DateTime::createFromFormat('Y-m-d',$request->input("datum_do"));
         $type = $request->input("type");
 
         $queryString = "sada";/*"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
