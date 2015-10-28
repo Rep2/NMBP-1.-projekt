@@ -66,7 +66,7 @@ class Pivoting extends Controller
         foreach ($period as $dt)
             $queryString .= ", \"" . $dt->format($dateQuery) . "\" bigint";
 
-        $queryString .= ", \"" . $datDo->format($dateQuery) . "\" bigint";
+     //   $queryString .= ", \"" . $datDo->format($dateQuery) . "\" bigint";
 
         $queryString .= ") ORDER BY query";
 
