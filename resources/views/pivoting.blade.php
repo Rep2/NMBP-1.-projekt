@@ -34,20 +34,17 @@
 
 <script>
     document.getElementById("button").addEventListener('click', function () {
-        $text = document.getElementById("search").value;
-
-        $andOr = 1;
-        if (document.getElementById("and").checked){
-            $andOr = 0;
-        }
+        $datumOd = document.getElementById("datumOd").value;
+        $datumDo = document.getElementById("datumDo").value;
 
         $type = 0;
-        if (document.getElementById("dict").checked){
+        if (document.getElementById("time").checked){
             $type = 1;
-        }else if (document.getElementById("fuzzy").checked) {
-            $type = 2
         }
 
+        alert($datumOd);
+
+        /*
         if ($text != null && $text != ""){
             $.ajax({
                 type: "POST",
@@ -67,7 +64,7 @@
             },"json");
         }else{
             document.getElementById("text1").innerHTML = "Prvo upišite željeni uzorak riječi";
-        }
+        }*/
     });
 </script>
 
