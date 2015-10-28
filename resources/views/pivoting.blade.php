@@ -18,17 +18,15 @@
     </div>
     <br>
 
-    Odabrate granulaciju
+    Odaberite granulaciju
     <form action="">
         <input type="radio" id="date" name="type" value="exact" checked="checked"> Dan
         <input type="radio" id="time" name="type" value="dict"> Sat
     </form>
 
-    <br>
-    <textarea id="text" rows="15" cols="80"></textarea>
-    <br>
+    <input type="button" id="nutton">Dohvati podatke<br>
 
-    <p id="text1">Upišite željeni uzorak riječi, izaberite opcije i pritisnite "Pretraži"</p>
+    <p id="text1">Unesite datum od i datum do, odaberite granulaciju i pokrenite analizu</p>
 
 </div>
 
