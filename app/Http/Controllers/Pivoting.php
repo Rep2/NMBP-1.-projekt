@@ -42,7 +42,7 @@ class Pivoting extends Controller
         $datDo = \DateTime::createFromFormat('Y-m-d', $request->input("datum_do"));
         $type = $request->input("type");
 
-        $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) + ':' newDate, count(*)
+        $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) + '':'' newDate, count(*)
           FROM log
           WHERE date::DATE >= ''" .$datOd->format('Y-m-d'). "'' AND date::DATE <= ''" .$datDo->format('Y-m-d'). "''
           GROUP BY query, newDate
