@@ -115,24 +115,24 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.51501155" vertical-offset="214" max-vertical-offset="1080">
-              <caret line="44" column="89" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+              <caret line="44" column="88" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1446073995000" expanded="true" signature="1155:1213" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1215" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1286" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1288" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1299" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1299" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1319" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1441" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1469" placeholder="SELECT * FRO..crosstab..." />
-                <marker date="1446073995000" expanded="true" signature="1155:1488" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1221" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1221" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1287" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1289" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1300" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1300" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1320" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1442" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1470" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446074336000" expanded="true" signature="1155:1489" placeholder="SELECT * FRO..crosstab..." />
               </folding>
             </state>
           </provider>
@@ -886,24 +886,24 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51501155" vertical-offset="214" max-vertical-offset="1080">
-          <caret line="44" column="89" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+          <caret line="44" column="88" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446073995000" expanded="true" signature="1155:1213" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1215" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1286" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1288" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1299" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1299" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1319" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1383" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1441" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1469" placeholder="SELECT * FRO..crosstab..." />
-            <marker date="1446073995000" expanded="true" signature="1155:1488" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1221" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1221" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1287" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1289" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1300" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1300" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1320" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1384" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1442" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1470" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446074336000" expanded="true" signature="1155:1489" placeholder="SELECT * FRO..crosstab..." />
           </folding>
         </state>
       </provider>
