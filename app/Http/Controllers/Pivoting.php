@@ -42,7 +42,8 @@ class Pivoting extends Controller
         $datDo = \DateTime::createFromFormat('Y-m-d',$request->input("datum_do"));
         $type = $request->input("type");
 
-        $queryString = "sada";/*"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
+      // $queryString = "sada";
+       /*"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
           FROM log
           GROUP BY query, newDate
           ORDER BY query, newDate)
@@ -58,7 +59,7 @@ class Pivoting extends Controller
         //    $queryString += ", " + $datOd + " int";
       //  }
 
-        $queryString += ") ORDER BY query";
+        $queryString = ") ORDER BY query";
 
         return response()->json(["str" => $queryString],200);
 
