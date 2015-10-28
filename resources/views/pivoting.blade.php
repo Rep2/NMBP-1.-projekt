@@ -19,12 +19,12 @@
     <br>
 
     Odaberite granulaciju
-    <br>
     <form action="">
+        <br>
         <input type="radio" id="date" name="type" value="exact" checked="checked"> Dan
         <input type="radio" id="time" name="type" value="dict"> Sat
     </form>
-    
+
     <br>
     <input type="button" id="nutton" value="Dohvati podatke"><br>
 
