@@ -43,34 +43,24 @@
         }
 
         if ($datumOd == "" || $datumDo == ""){
-            document.getElementById("text1").innerHTML = "Unesite datum od i datum do";
-        }
-
-        alert($datumOd);
-
-
-
-        /*
-        if ($text != null && $text != ""){
+            document.getElementById("text1").innerHTML = "Prvo unesite datum od i datum do";
+        }else{
             $.ajax({
                 type: "POST",
-                url : "http://46.101.238.99/newSearch",
-                data : {"text": $text, "andor":$andOr, "type":$type},
+                url : "http://46.101.238.99/pivoting",
+                data : {"datum_od": $datumOd, "datum_do":$datumDo, "type":$type},
                 success : function(data){
-                    document.getElementById("text").innerHTML = data["select"];
+                    $newText = "ddd";
 
-                    $newText = "";
-
-                    $.each(data["result"], function(index, val) {
-                        $newText += val["title"] + "[" + val["rank"] + "] <br>";
-                    });
+                    alert(data)
+                  //  $.each(data["result"], function(index, val) {
+                //        $newText += val["title"] + "[" + val["rank"] + "] <br>";
+                 //   });
 
                     document.getElementById("text1").innerHTML = $newText;
                 }
             },"json");
-        }else{
-            document.getElementById("text1").innerHTML = "Prvo upišite željeni uzorak riječi";
-        }*/
+        }
     });
 </script>
 
