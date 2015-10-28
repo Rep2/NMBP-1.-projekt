@@ -53,20 +53,21 @@ class Pivoting extends Controller
           FROM log
           WHERE date::DATE >= ''" .$datOd->format('Y-m-d'). "'' AND date::DATE <= ''" .$datDo->format('Y-m-d'). "''
           GROUP BY query, newDate
-          ORDER BY query, newDate')
+          ORDER BY query, newDate',
+          'SELECT DISTINCT to_char(date, ''" .$dateQuery. "'') FROM log ORDER BY 1')
           AS pivotTable (query varchar(1000)";
 
         $interval = $type == 0 ?  \DateInterval::createFromDateString('1 day') : \DateInterval::createFromDateString('1 hour');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
-        $dateQuery2 = "d.m.Y";
+        $dateQuery = "d.m.Y";
         if ($type == 1){
-            $dateQuery2 .= " H";
+            $dateQuery .= " H";
         }
         foreach ($period as $dt)
-            $queryString .= ", \"" . $dt->format($dateQuery2) . "\" bigint";
+            $queryString .= ", \"" . $dt->format($dateQuery) . "\" bigint";
 
-        $queryString .= ", 'SELECT DISTINCT to_char(date, ''" .$dateQuery. "'') FROM log ORDER BY 1') ORDER BY query";
+        $queryString .= " ) ORDER BY query";
 
         $result = DB::select($queryString);
 
