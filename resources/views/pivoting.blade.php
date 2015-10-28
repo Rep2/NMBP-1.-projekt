@@ -42,7 +42,13 @@
             $type = 1;
         }
 
+        if ($datumOd == "" || $datumDo == ""){
+            document.getElementById("text1").innerHTML = "Unesite datum od i datum do";
+        }
+
         alert($datumOd);
+
+
 
         /*
         if ($text != null && $text != ""){
