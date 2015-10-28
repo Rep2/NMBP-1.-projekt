@@ -46,7 +46,7 @@ class Pivoting extends Controller
           FROM log
           GROUP BY query, date
           ORDER BY query, date')
-          AS pivotTable (ds text";
+          AS pivotTable (ds varchar(1000)";
 // WHERE date::DATE >= to_date('" .$datOd->format('d-m-Y'). "', 'd-m-Y') AND date::Date <= to_date('" .$datDo->format('d-m-Y'). "', 'd-m-Y')
 
         $interval = \DateInterval::createFromDateString('1 day');
@@ -59,7 +59,7 @@ class Pivoting extends Controller
         //    $queryString += ", " + $datOd + " int";
         //  }
 
-        $queryString .= ", prvi bigint, prvi2 bigint, prvi3 bigint, prvi4 bigint) ORDER BY ds";
+        $queryString .= ", prvi bigint) ORDER BY ds";
 
         $result = DB::select($queryString);
 
