@@ -49,7 +49,7 @@ class Text extends Controller
 
         $result = DB::select("SELECT text FROM texts where id=:id", ['id' => $id]);
 
-        return response()->json($result[0]["text"], 200);
+        return response()->json($result[0]->'text', 200);
     }
 
 }
