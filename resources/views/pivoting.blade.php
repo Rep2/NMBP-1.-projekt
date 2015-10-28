@@ -50,12 +50,25 @@
                 url : "http://46.101.238.99/pivoting",
                 data : {"datum_od": $datumOd, "datum_do":$datumDo, "type":$type},
                 success : function(data){
-                    $newText = "ddd";
+                    $newText = "<table style=\"width:100%\"> <tr>";
 
-                    alert(data)
-                  //  $.each(data["result"], function(index, val) {
-                //        $newText += val["title"] + "[" + val["rank"] + "] <br>";
-                 //   });
+                    $.each(data["result"][0], function(key, val) {
+                        $newText += "<td>" + key + "</td>";
+                    });
+
+                    $newText += "</tr>";
+
+                    $.each(data["result"], function(index, val) {
+                        $newText += "<tr>";
+
+                        $.each(val, function(key, val2) {
+                            $newText += "<td>" + val2 + "</td>";
+                        });
+
+                        $newText += "</tr>";
+                    });
+
+                    $newText += "</table>";
 
                     document.getElementById("text1").innerHTML = $newText;
                 }
