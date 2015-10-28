@@ -138,7 +138,7 @@ class Search extends Controller
 
         $result = DB::select($selectQuery);
 
-        DB::insert("INSERT INTO log (query, date) VALUES (?, ?)", [$queryString, Carbon::now()]);
+        DB::insert("INSERT INTO log (id, query, date) VALUES (nextval('logSequence'), ?, ?)", [$queryString, Carbon::now()]);
 
         return response()->json(['select' => $selectQuery, 'result' => $result], 200);
     }
