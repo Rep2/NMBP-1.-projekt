@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Validator;
 use Illuminate\Support\Facades\DB;
 
-class SearchModified extends Controller
+class Modified extends Controller
 {
     /**
      * Display a listing of the resource.

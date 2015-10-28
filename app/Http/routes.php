@@ -13,5 +13,5 @@
 
 Route::resource('add','Text');
 
-Route::resource('searchModified','SearchModified');
+Route::resource('Modified','Modified');
 Route::resource('search','Search');
