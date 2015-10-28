@@ -59,7 +59,7 @@ class Pivoting extends Controller
         //  }
 
         $queryString .= ", prvi int)
-        WHERE date >= " .$datOd->format('d-m-Y'). " && date <= " .$datDo->format('d-m-Y'). "
+        WHERE newDate >= " .$datOd->format('d-m-Y'). " && newDate <= " .$datDo->format('d-m-Y'). "
         ORDER BY query";
 
         $result = DB::select($queryString);
