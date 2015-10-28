@@ -19,11 +19,13 @@
     <br>
 
     Odaberite granulaciju
+    <br>
     <form action="">
         <input type="radio" id="date" name="type" value="exact" checked="checked"> Dan
         <input type="radio" id="time" name="type" value="dict"> Sat
     </form>
-
+    
+    <br>
     <input type="button" id="nutton" value="Dohvati podatke"><br>
 
     <p id="text1">Unesite datum od i datum do, odaberite granulaciju i pokrenite analizu</p>
