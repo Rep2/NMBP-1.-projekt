@@ -24,7 +24,7 @@
         <input type="radio" id="time" name="type" value="dict"> Sat
     </form>
 
-    <input type="button" id="nutton">Dohvati podatke<br>
+    <input type="button" id="nutton" value="Dohvati podatke"><br>
 
     <p id="text1">Unesite datum od i datum do, odaberite granulaciju i pokrenite analizu</p>
 
