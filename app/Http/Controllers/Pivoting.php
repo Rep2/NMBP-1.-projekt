@@ -51,14 +51,14 @@ class Pivoting extends Controller
         $interval = \DateInterval::createFromDateString('1 day');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
-        foreach ($period as $dt)
-            $queryString .= ", " . $dt->format('d-m-Y') . " int";
+     //   foreach ($period as $dt)
+     //       $queryString .= ", " . $dt->format('d-m-Y') . " int";
 
         //   while (strtotime($datOd) <= strtotime($datDo)) {
         //    $queryString += ", " + $datOd + " int";
         //  }
 
-        $queryString .= ") ORDER BY query";
+        $queryString .= ", prvi int) ORDER BY query";
 
         $result = DB::select($queryString);
 
