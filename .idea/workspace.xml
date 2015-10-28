@@ -114,11 +114,11 @@
       <file leaf-file-name="Pivoting.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41108546" vertical-offset="214" max-vertical-offset="1110">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.5496536" vertical-offset="214" max-vertical-offset="1110">
+              <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1446063889000" expanded="true" signature="1155:1494" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446064079000" expanded="true" signature="1155:1472" placeholder="SELECT * FRO..crosstab..." />
               </folding>
             </state>
           </provider>
@@ -871,11 +871,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41108546" vertical-offset="214" max-vertical-offset="1110">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.5496536" vertical-offset="214" max-vertical-offset="1110">
+          <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446063889000" expanded="true" signature="1155:1494" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446064079000" expanded="true" signature="1155:1472" placeholder="SELECT * FRO..crosstab..." />
           </folding>
         </state>
       </provider>
