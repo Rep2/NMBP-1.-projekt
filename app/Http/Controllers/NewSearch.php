@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Validator;
-use Illuminate\Support\Facades\DB;
 
-class Modified extends Controller
+class NewSearch extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +15,7 @@ class Modified extends Controller
      */
     public function index()
     {
-        return view('search');
+        return view('newSearch');
     }
 
     /**
@@ -130,5 +128,4 @@ class Modified extends Controller
 
         return response()->json(['select' => $selectQuery, 'result' => $result], 200);
     }
-
 }
