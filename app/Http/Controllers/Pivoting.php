@@ -42,11 +42,11 @@ class Pivoting extends Controller
         $datDo = $request->input("datum_do");
         $type = $request->input("type");
 
-        $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
+        $queryString = "sada";/*"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
           FROM log
           GROUP BY query, newDate
           ORDER BY query, newDate)
-          AS pivotTable (query varchar";
+          AS pivotTable (query varchar";*/
 
         while (strtotime($datOd) <= strtotime($datDo)) {
             $queryString += ", " + $datOd + " int";
