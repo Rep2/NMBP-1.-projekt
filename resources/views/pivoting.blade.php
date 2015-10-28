@@ -50,10 +50,10 @@
                 url : "http://46.101.238.99/pivoting",
                 data : {"datum_od": $datumOd, "datum_do":$datumDo, "type":$type},
                 success : function(data){
-                    $newText = "<table style=\"width:100%\"> <tr>";
+                    $newText = "<table border=\"1\" style=\"width:100%\"> <tr>";
 
                     $.each(data["result"][0], function(key, val) {
-                        $newText += "<td>" + key + "</td>";
+                        $newText += "<th>" + key + "</th>";
                     });
 
                     $newText += "</tr>";
