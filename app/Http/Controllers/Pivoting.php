@@ -45,14 +45,14 @@ class Pivoting extends Controller
         $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
           FROM log
           GROUP BY query, newDate
-          ORDER BY query, newDate)
+          ORDER BY query, newDate')
           AS pivotTable (query varchar";
 
         $interval = \DateInterval::createFromDateString('1 day');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
-  //      foreach ( $period as $dt )
-      //      $queryString += ", " + date_format($dt, 'd-m-Y') + " int";
+        foreach ( $period as $dt )
+            $queryString .= ", " + date_format($dt, 'd-m-Y') + " int";
 
      //   while (strtotime($datOd) <= strtotime($datDo)) {
         //    $queryString += ", " + $datOd + " int";
@@ -63,4 +63,5 @@ class Pivoting extends Controller
         return response()->json(["str" => $queryString],200);
 
     }
+
 }
