@@ -133,7 +133,7 @@ class Search extends Controller
             }
         }
 
-        $selectQuery .= "" .chr(10). "ORDER BY rank DESC";
+        $selectQuery .= "" .chr(10). "ORDER BY rank DESC LIMIT 10";
 
         $result = DB::select($selectQuery);
 
