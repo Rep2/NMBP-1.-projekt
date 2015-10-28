@@ -49,13 +49,13 @@ class Pivoting extends Controller
           ORDER BY query, newDate')
           AS pivotTable (query varchar(1000)";
 
-        $interval = \DateInterval::createFromDateString('1 day');
+        $interval = \DateInterval::createFromDateString('1 hour');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
         foreach ($period as $dt)
-            $queryString .= ", \"" . $dt->format('d.m.Y') . "\" bigint";
+            $queryString .= ", \"" . $dt->format('d.m.Y hh') . "\" bigint";
 
-        $queryString .= ", \"" . $datDo->format('d.m.Y') . "\" bigint";
+        $queryString .= ", \"" . $datDo->format('d.m.Y hh') . "\" bigint";
 
         $queryString .= ") ORDER BY query";
 
