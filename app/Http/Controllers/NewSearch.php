@@ -87,7 +87,7 @@ class NewSearch extends Controller
 
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-        $selectQuery = "SELECT ts_headline(text, '" .substr($tokenArray[0], 1, strlen($tokenArray[0]) - 2). "') title,
+        $selectQuery = "SELECT ts_headline(text, to_tsquery(" .$queryString. ")) title,
                ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank" .chr(10). "FROM texts ";
 
         $separator = $request->input('andor') == 0 ? "AND " : "OR ";
