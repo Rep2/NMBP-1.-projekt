@@ -52,7 +52,7 @@ class Pivoting extends Controller
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
         foreach ($period as $dt)
-            $queryString .= ", " + $dt->format('d-m-Y') + " int";
+            $queryString .= ", " . $dt->format('d-m-Y') . " int";
 
         //   while (strtotime($datOd) <= strtotime($datDo)) {
         //    $queryString += ", " + $datOd + " int";
@@ -62,5 +62,5 @@ class Pivoting extends Controller
 
         return response()->json(["str" => $queryString], 200);
 
-    }
+    }"SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*) FROM log GROUP BY query, newDate ORDER BY query, newDate') AS pivotTable (query varchar1234567) ORDER BY query"
 }
