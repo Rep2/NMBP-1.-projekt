@@ -59,7 +59,7 @@
                     $newText = "";
 
                     $.each(data["result"], function(index, val) {
-                        $newText += "<a href=\"http://www.w3schools.com\">" + val["title"] + "[" + val["rank"] + "] <br> <\\a>";
+                        $newText += "<a href=\"http://www.w3schools.com\">" + val["title"] + "[" + val["rank"] + "] <br> <\a>";
                     });
 
                     document.getElementById("text1").innerHTML = $newText;
