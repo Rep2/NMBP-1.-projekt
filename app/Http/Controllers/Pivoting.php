@@ -48,19 +48,18 @@ class Pivoting extends Controller
           GROUP BY query, newDate
           ORDER BY query, newDate')
           AS pivotTable (query varchar(1000)";
-// WHERE date::DATE >= to_date('" .$datOd->format('d-m-Y'). "', 'd-m-Y') AND date::Date <= to_date('" .$datDo->format('d-m-Y'). "', 'd-m-Y')
 
         $interval = \DateInterval::createFromDateString('1 day');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
-     //   foreach ($period as $dt)
-     //       $queryString .= ", " . $dt->format('d-m-Y') . " int";
+        foreach ($period as $dt)
+            $queryString .= ", " . $dt->format('d.m.Y') . " bigint";
 
         //   while (strtotime($datOd) <= strtotime($datDo)) {
         //    $queryString += ", " + $datOd + " int";
         //  }
 
-        $queryString .= ", prvi bigint) ORDER BY query";
+        $queryString .= ") ORDER BY query";
 
         $result = DB::select($queryString);
 
