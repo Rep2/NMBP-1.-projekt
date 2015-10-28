@@ -38,7 +38,7 @@ class Text extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'text' => 'required|max:255',
+            'text' => 'required',
         ]);
 
         if ($validator->fails()) {
