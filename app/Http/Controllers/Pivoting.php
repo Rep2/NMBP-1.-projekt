@@ -59,7 +59,7 @@ class Pivoting extends Controller
         //    $queryString += ", " + $datOd + " int";
       //  }
 
-        $queryString += ") ORDER BY query";
+        $queryString .= ") ORDER BY query";
 
         return response()->json(["str" => $queryString],200);
 
