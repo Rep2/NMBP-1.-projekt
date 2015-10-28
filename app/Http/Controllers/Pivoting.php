@@ -59,14 +59,14 @@ class Pivoting extends Controller
         $interval = $type == 0 ?  \DateInterval::createFromDateString('1 day') : \DateInterval::createFromDateString('1 hour');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
-        $dateQuery = "d.m.Y";
+        $dateQuery2 = "d.m.Y";
         if ($type == 1){
-            $dateQuery .= " H";
+            $dateQuery2 .= " H";
         }
         foreach ($period as $dt)
-            $queryString .= ", \"" . $dt->format($dateQuery) . "\" bigint";
+            $queryString .= ", \"" . $dt->format($dateQuery2) . "\" bigint";
 
-        $queryString .= ") ORDER BY query";
+        $queryString .= ", 'SELECT DISTINCT to_char(date, ''" .$dateQuery. "'') FROM log ORDER BY 1') ORDER BY query";
 
         $result = DB::select($queryString);
 
