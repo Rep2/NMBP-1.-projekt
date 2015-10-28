@@ -44,7 +44,7 @@ class Pivoting extends Controller
 
         $queryString = "SELECT * FROM crosstab ('SELECT query, CAST(date AS DATE) as newDate, count(*)
           FROM log
-          WHERE newDate >= '" .$datOd->format('Ymd'). "' && newDate <= '" .$datDo->format('Ymd'). "'
+          WHERE newDate >= CAST('" .$datOd->format('Ymd'). "' AS DATE) && newDate <= '" .$datDo->format('Ymd'). "'
           GROUP BY query, newDate
           ORDER BY query, newDate')
           AS pivotTable (query varchar";
