@@ -41,10 +41,15 @@ class Pivoting extends Controller
         $datOd = \DateTime::createFromFormat('Y-m-d', $request->input("datum_od"));
         $datOd->setTime(0,0);
         $datDo = \DateTime::createFromFormat('Y-m-d', $request->input("datum_do"));
-        $datDo->setTime(24,0);
+        $datDo->setTime(23,0);
         $type = $request->input("type");
 
-        $queryString = "SELECT * FROM crosstab ('SELECT query, to_char(date, ''DD.MM.YYYY HH'') newDate, count(*)
+        $dateQuery = "DD.MM.YYYY";
+        if ($type == 1){
+            $dateQuery .= " HH";
+        }
+
+        $queryString = "SELECT * FROM crosstab ('SELECT query, to_char(date, ''" .$dateQuery. "'') newDate, count(*)
           FROM log
           WHERE date::DATE >= ''" .$datOd->format('Y-m-d'). "'' AND date::DATE <= ''" .$datDo->format('Y-m-d'). "''
           GROUP BY query, newDate
@@ -54,10 +59,14 @@ class Pivoting extends Controller
         $interval = \DateInterval::createFromDateString('1 hour');
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
+        $dateQuery = "d.m.Y";
+        if ($type == 1){
+            $dateQuery .= " H";
+        }
         foreach ($period as $dt)
-            $queryString .= ", \"" . $dt->format('d.m.Y H') . "\" bigint";
+            $queryString .= ", \"" . $dt->format($dateQuery) . "\" bigint";
 
-        $queryString .= ", \"" . $datDo->format('d.m.Y H') . "\" bigint";
+        $queryString .= ", \"" . $datDo->format($dateQuery) . "\" bigint";
 
         $queryString .= ") ORDER BY query";
 
