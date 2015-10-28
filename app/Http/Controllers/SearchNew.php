@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Validator;
 use Illuminate\Support\Facades\DB;
 
-class Search extends Controller
+class SearchNew extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -96,7 +96,7 @@ class Search extends Controller
 
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
-        $selectQuery = "SELECT ts_headline(text, to_tsquery(" .$queryString. ")) title,
+        $selectQuery = "SELECT ts_headline(text, to_tsquery(" .$tokenArray[0]. ")) title,
                ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank" .chr(10). "FROM texts ";
 
         $separator = $request->input('andor') == 0 ? "AND " : "OR ";
