@@ -123,7 +123,7 @@ class Search extends Controller
                 if ($tokenArray[$i][0] == '(') {
                     $selectQuery .= " text % '%" . substr($tokenArray[$i], 1, strlen($tokenArray[$i]) - 2) . "%'";
                 } else {
-                    $selectQuery .= " text % '%" . $tokenArray[$i] . "%'";
+                    $selectQuery .= " levenshtein(text, '" .$tokenArray[$i]. "') < 5";
                 }
             }
 
