@@ -52,7 +52,7 @@ class Pivoting extends Controller
         $period = new \DatePeriod($datOd, $interval, $datDo);
 
         foreach ( $period as $dt )
-            $queryString += ", " + $dt::format('d-m-Y') + " int";
+            $queryString += ", " + date_format($dt, 'd-m-Y') + " int";
 
      //   while (strtotime($datOd) <= strtotime($datDo)) {
         //    $queryString += ", " + $datOd + " int";

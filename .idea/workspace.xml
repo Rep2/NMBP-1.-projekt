@@ -114,10 +114,10 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.8660508" vertical-offset="60" max-vertical-offset="1080">
-              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+              <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1446057476000" expanded="true" signature="1160:1365" placeholder="SELECT * FRO..crosstab..." />
+                <marker date="1446057560000" expanded="true" signature="1160:1365" placeholder="SELECT * FRO..crosstab..." />
               </folding>
             </state>
           </provider>
@@ -867,10 +867,10 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8660508" vertical-offset="60" max-vertical-offset="1080">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1446057476000" expanded="true" signature="1160:1365" placeholder="SELECT * FRO..crosstab..." />
+            <marker date="1446057560000" expanded="true" signature="1160:1365" placeholder="SELECT * FRO..crosstab..." />
           </folding>
         </state>
       </provider>
