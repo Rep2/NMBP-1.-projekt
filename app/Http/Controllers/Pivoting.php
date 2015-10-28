@@ -60,6 +60,8 @@ class Pivoting extends Controller
 
         $queryString .= ") ORDER BY query";
 
-        return response()->json(["str" => $queryString], 200);
+        $result = DB::select($queryString);
+
+        return response()->json(["str" => $result], 200);
     }
 }
