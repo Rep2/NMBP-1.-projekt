@@ -48,9 +48,15 @@ class Pivoting extends Controller
           ORDER BY query, newDate)
           AS pivotTable (query varchar";*/
 
-        while (strtotime($datOd) <= strtotime($datDo)) {
-            $queryString += ", " + $datOd + " int";
-        }
+        $interval = \DateInterval::createFromDateString('1 day');
+        $period = new \DatePeriod($datOd, $interval, $datDo);
+
+        foreach ( $period as $dt )
+            $queryString += ", " + $dt + " int";
+
+     //   while (strtotime($datOd) <= strtotime($datDo)) {
+        //    $queryString += ", " + $datOd + " int";
+      //  }
 
         $queryString += ") ORDER BY query";
 
