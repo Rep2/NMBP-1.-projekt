@@ -5,6 +5,8 @@
 <div id="section">
 
     <div>
+        Unesite vremenski period
+        <br><br>
         <form>
             Datum od
             <input type="date" id="datumOd"/><br>
@@ -14,6 +16,7 @@
             <input type="date" id="datumDo"/>​<br>
         </form>
     </div>
+    <br>
 
     <form action="">
         <input type="radio" id="date" name="type" value="exact" checked="checked"> Dan
