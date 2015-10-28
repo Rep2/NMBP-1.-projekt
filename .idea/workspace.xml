@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a197283-b0c0-4709-8c96-d854e75940be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Text.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="NMBP-1.-projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,17 +27,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Text.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Text.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="915">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5460751" vertical-offset="0" max-vertical-offset="915">
+              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
-                <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
-                <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
-                <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
-                <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+                <marker date="1446051299000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+                <marker date="1446051299000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+                <marker date="1446051299000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+                <marker date="1446051299000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
               </folding>
             </state>
           </provider>
@@ -109,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25597268" vertical-offset="0" max-vertical-offset="879">
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="345">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
@@ -164,8 +163,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/NewSearch.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
         <option value="$PROJECT_DIR$/resources/views/search.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Text.php" />
       </list>
     </option>
   </component>
@@ -464,10 +463,10 @@
           <caret line="51" column="54" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="54" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
@@ -547,10 +546,10 @@
           <caret line="51" column="54" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="54" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
@@ -630,10 +629,10 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
@@ -836,26 +835,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.75" vertical-offset="0" max-vertical-offset="915">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="345">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1446051152000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
-            <marker date="1446051152000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
+            <element signature="e#7#392#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Text.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25597268" vertical-offset="0" max-vertical-offset="879">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5460751" vertical-offset="0" max-vertical-offset="915">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
           <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
+            <element signature="e#40#54#0#PHP" expanded="true" />
+            <marker date="1446051299000" expanded="true" signature="895:961" placeholder="INSERT INTO ..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1134" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1137" placeholder="SELECT text ..texts..." />
+            <marker date="1446051299000" expanded="true" signature="1102:1154" placeholder="SELECT text ..texts..." />
           </folding>
         </state>
       </provider>
