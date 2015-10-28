@@ -55,9 +55,7 @@ class Pivoting extends Controller
         foreach ($period as $dt)
             $queryString .= ", \"" . $dt->format('d.m.Y') . "\" bigint";
 
-        //   while (strtotime($datOd) <= strtotime($datDo)) {
-        //    $queryString += ", " + $datOd + " int";
-        //  }
+        $queryString .= ", \"" . $datDo->format('d.m.Y') . "\" bigint";
 
         $queryString .= ") ORDER BY query";
 
