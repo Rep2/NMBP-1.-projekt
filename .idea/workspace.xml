@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a197283-b0c0-4709-8c96-d854e75940be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Pivoting.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Pivoting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pivoting.blade.php" afterPath="$PROJECT_DIR$/resources/views/pivoting.blade.php" />
     </list>
     <ignored path="NMBP-1.-projekt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +66,9 @@
       <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="27.666666" vertical-offset="1414" max-vertical-offset="2280">
-              <caret line="50" column="40" selection-start-line="40" selection-start-column="7" selection-end-line="50" selection-end-column="40" />
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="2280">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="34" />
               <folding>
-                <element signature="e#40#58#0#PHP" expanded="true" />
                 <marker date="1446052528000" expanded="true" signature="2730:4628" placeholder="SELECT id, r..." />
                 <marker date="1446052528000" expanded="true" signature="4436:4507" placeholder="INSERT INTO ..." />
               </folding>
@@ -112,13 +110,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pivoting.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pivoting.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.958333" vertical-offset="34" max-vertical-offset="930">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.13510393" vertical-offset="3" max-vertical-offset="990">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
-                <marker date="1446055836000" expanded="true" signature="1027:1232" placeholder="SELECT * FRO..crosstab..." />
+                <element signature="e#40#68#0#PHP" expanded="true" />
+                <marker date="1446055934000" expanded="true" signature="1077:1282" placeholder="SELECT * FRO..crosstab..." />
               </folding>
             </state>
           </provider>
@@ -134,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pivoting.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pivoting.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pivoting.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68591225" vertical-offset="216" max-vertical-offset="1110">
-              <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+            <state vertical-scroll-proportion="-30.375" vertical-offset="216" max-vertical-offset="1110">
+              <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -169,8 +168,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Search.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/base.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Pivoting.php" />
         <option value="$PROJECT_DIR$/resources/views/pivoting.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Pivoting.php" />
       </list>
     </option>
   </component>
@@ -498,7 +497,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="2895">
           <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
             <marker date="1446052528000" expanded="true" signature="2730:4628" placeholder="SELECT id, r..." />
             <marker date="1446052528000" expanded="true" signature="4436:4507" placeholder="INSERT INTO ..." />
           </folding>
@@ -574,7 +572,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2895">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
             <marker date="1446052528000" expanded="true" signature="2730:4628" placeholder="SELECT id, r..." />
             <marker date="1446052528000" expanded="true" signature="4436:4507" placeholder="INSERT INTO ..." />
           </folding>
@@ -658,7 +655,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
             <marker date="1446052528000" expanded="true" signature="2730:4628" placeholder="SELECT id, r..." />
             <marker date="1446052528000" expanded="true" signature="4436:4507" placeholder="INSERT INTO ..." />
           </folding>
@@ -833,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.5" vertical-offset="141" max-vertical-offset="1035">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.375" vertical-offset="336" max-vertical-offset="1215">
@@ -849,12 +837,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pivoting.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.375" vertical-offset="216" max-vertical-offset="1110">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.5" vertical-offset="141" max-vertical-offset="1035">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="27.666666" vertical-offset="1414" max-vertical-offset="2280">
-          <caret line="50" column="40" selection-start-line="40" selection-start-column="7" selection-end-line="50" selection-end-column="40" />
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="2280">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
             <marker date="1446052528000" expanded="true" signature="2730:4628" placeholder="SELECT id, r..." />
             <marker date="1446052528000" expanded="true" signature="4436:4507" placeholder="INSERT INTO ..." />
           </folding>
@@ -863,19 +866,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pivoting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.958333" vertical-offset="34" max-vertical-offset="930">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.13510393" vertical-offset="3" max-vertical-offset="990">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
-            <marker date="1446055836000" expanded="true" signature="1027:1232" placeholder="SELECT * FRO..crosstab..." />
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <marker date="1446055934000" expanded="true" signature="1077:1282" placeholder="SELECT * FRO..crosstab..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pivoting.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68591225" vertical-offset="216" max-vertical-offset="1110">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
