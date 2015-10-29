@@ -69,7 +69,7 @@ class Pivoting extends Controller
             $dateQuery .= " H";
         }
         foreach ($result as $value)
-            $queryString .= ", \"" . $value . "\" bigint";
+            $queryString .= ", \"" . $value["newData"] . "\" bigint";
 
         $queryString .= " ) ORDER BY query";
 
