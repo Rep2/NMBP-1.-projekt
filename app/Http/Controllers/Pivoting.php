@@ -49,7 +49,7 @@ class Pivoting extends Controller
             $dateQuery .= " HH";
         }
 
-        $queryString = "SELECT DISTINCT to_char(date, ''" .$dateQuery. "'') newDate FROM log ORDER BY 1";
+        $queryString = "SELECT DISTINCT to_char(date, '" .$dateQuery. "') newDate FROM log ORDER BY 1";
         $result = DB::select($queryString);
 
 
