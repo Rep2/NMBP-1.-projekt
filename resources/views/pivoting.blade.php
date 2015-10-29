@@ -52,25 +52,29 @@
                 success : function(data){
                     $newText = "<table border=\"1\" style=\"width:100%\"> <tr>";
 
-                    $.each(data["result"][0], function(key, val) {
-                        $newText += "<th>" + key + "</th>";
-                    });
-
-                    $newText += "</tr>";
-
-                    $.each(data["result"], function(index, val) {
-                        $newText += "<tr>";
-
-                        $.each(val, function(key, val2) {
-                            $newText += "<td>" + val2 + "</td>";
+                    if (data["result"].size() > 0) {
+                        $.each(data["result"][0], function (key, val) {
+                            $newText += "<th>" + key + "</th>";
                         });
 
                         $newText += "</tr>";
-                    });
 
-                    $newText += "</table>";
+                        $.each(data["result"], function (index, val) {
+                            $newText += "<tr>";
 
-                    document.getElementById("text1").innerHTML = $newText;
+                            $.each(val, function (key, val2) {
+                                $newText += "<td>" + val2 + "</td>";
+                            });
+
+                            $newText += "</tr>";
+                        });
+
+                        $newText += "</table>";
+
+                        document.getElementById("text1").innerHTML = $newText;
+                    }else{
+                        document.getElementById("text1").innerHTML = "Ne postoji zapis za traženo razdoblje"
+                    }
                 }
             },"json");
         }
