@@ -40,7 +40,7 @@ class Text extends Controller
 
         $text = $request->input('text');
 
-        DB::insert("INSERT INTO texts VALUES (nextval('textsSequence'), '" .$text. "')");
+        DB::insert("INSERT INTO texts VALUES (nextval('textsSequence'), '" .$text. "', to_tsvector('" .$text. "'))");
 
         return response()->json(['message' => 'Redak dodan'], 200);
     }
