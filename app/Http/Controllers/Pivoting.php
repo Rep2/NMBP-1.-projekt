@@ -49,6 +49,10 @@ class Pivoting extends Controller
             $dateQuery .= " HH";
         }
 
+        $queryString = "SELECT DISTINCT to_char(date, ''" .$dateQuery. "'') newDate FROM log ORDER BY 1";
+        $result = DB::select($queryString);
+
+
         $queryString = "SELECT * FROM crosstab ('SELECT query, to_char(date, ''" .$dateQuery. "'') newDate, count(*)
           FROM log
           WHERE date::DATE >= ''" .$datOd->format('Y-m-d'). "'' AND date::DATE <= ''" .$datDo->format('Y-m-d'). "''
@@ -57,15 +61,15 @@ class Pivoting extends Controller
           'SELECT DISTINCT to_char(date, ''" .$dateQuery. "'') FROM log ORDER BY 1')
           AS pivotTable (query varchar(1000)";
 
-        $interval = $type == 0 ?  \DateInterval::createFromDateString('1 day') : \DateInterval::createFromDateString('1 hour');
-        $period = new \DatePeriod($datOd, $interval, $datDo);
+   //     $interval = $type == 0 ?  \DateInterval::createFromDateString('1 day') : \DateInterval::createFromDateString('1 hour');
+   //     $period = new \DatePeriod($datOd, $interval, $datDo);
 
         $dateQuery = "d.m.Y";
         if ($type == 1){
             $dateQuery .= " H";
         }
-        foreach ($period as $dt)
-            $queryString .= ", \"" . $dt->format($dateQuery) . "\" bigint";
+        foreach ($result as $value)
+            $queryString .= ", \"" . $value["newDate"] . "\" bigint";
 
         $queryString .= " ) ORDER BY query";
 
