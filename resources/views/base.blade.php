@@ -15,12 +15,12 @@
             line-height:30px;
             background-color:#eeeeee;
             height:500px;
-            width:90%;
+            width:180px;
             float:left;
             padding:5px;
         }
         #section {
-            width:800px;
+            width:80%;
             float:left;
             padding:10px;
         }
