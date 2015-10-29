@@ -52,7 +52,7 @@
                 success : function(data){
                     $newText = "<table border=\"1\" style=\"width:100%\"> <tr>";
 
-                    if (data["result"].length() > 0) {
+                    if (data["result"].length > 0) {
                         $.each(data["result"][0], function (key, val) {
                             $newText += "<th>" + key + "</th>";
                         });
