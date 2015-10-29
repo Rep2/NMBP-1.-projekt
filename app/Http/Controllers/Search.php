@@ -98,7 +98,7 @@ class Search extends Controller
         $queryString = "'" .implode($separator, $parsedTokenArray). "'";
 
         $selectQuery = "SELECT id, ts_headline(text, to_tsquery(" .$queryString. ")) title,
-               ts_rank(to_tsvector(text), to_tsquery(" .$queryString. ")) rank" .chr(10). "FROM texts ";
+               ts_rank(normalized_text, to_tsquery(" .$queryString. ")) rank" .chr(10). "FROM texts ";
 
         $separator = $request->input('andor') == 0 ? "AND " : "OR ";
 
@@ -116,9 +116,9 @@ class Search extends Controller
                 }
             }else if ($request->input('type') == 1) {
                 if ($tokenArray[$i][0] == '(') {
-                    $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .substr($parsedTokenArray[$i], 1, strlen($parsedTokenArray[$i]) - 2). "')";
+                    $selectQuery .= " normalized_text @@ to_tsquery('english','" .substr($parsedTokenArray[$i], 1, strlen($parsedTokenArray[$i]) - 2). "')";
                 } else {
-                    $selectQuery .= " to_tsvector(text) @@ to_tsquery('english','" .$parsedTokenArray[$i]. "')";
+                    $selectQuery .= " normalized_text @@ to_tsquery('english','" .$parsedTokenArray[$i]. "')";
                 }
             }else{
                 if ($tokenArray[$i][0] == '(') {
